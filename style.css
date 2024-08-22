@@ -17,6 +17,10 @@ body{
     color: #344051;
     
 }
+.gallery-heading > p{
+    color: #344051;
+    text-align: center;
+}
 
 .container{
     display: flex;
