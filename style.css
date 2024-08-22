@@ -4,10 +4,58 @@
     margin: 0;
     padding: 0;
 }
+.gallery-heading > h3{
+    color: #141C24;
+}
+
 body{
-    padding: 0 1.2rem;
+    padding: 0 1.6rem;
     font: inherit;
 }
+
+.donation-left p{
+    color: #344051;
+    
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+}
+.gallery-heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+.gallery-heading > h2{
+    background-color: #F0F6FF;
+    color: #0052CC;
+    padding: .5rem .5rem;
+    border-radius: 1.5rem;
+    font-size: 14px;
+}
+.gallery-heading > h3{
+    color: #141C24;
+    font-size: 1.3rem;
+}
+.gallery-socials{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.socials{
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+}
+
+
+/* Footer Starts Here */
+
 .footer-navigations-bottom{
     display: flex;
     justify-content: space-between;
@@ -31,8 +79,8 @@ body{
 }
 .footer-navigations-links-section > a{
     text-decoration: none;
-    color: black;
-    font-size: 14px;
+    color: #344051;
+    font-size: 16px;
 }
 .footer-navigations-links-section > a:hover{
     color: rgb(107, 129, 255);
@@ -42,4 +90,186 @@ body{
     align-items: center;
     justify-content: center;
     margin:1.2rem 0 ;
+}
+
+/* Donation */
+.fixed-width{
+    max-width: 598px;
+}
+.donation-divider{
+    display: flex;
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+.donation-left{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.donation-left > button{
+    align-self: flex-start;
+    background: #1A75FF;
+    padding: 10px 20px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+}
+.donation-left > button >a{
+    text-decoration: none;
+    color: #fff;
+}
+.donation-right{
+    display: flex;
+    gap: 12px;
+}
+.donation_images{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.smaller_donation_image{
+    display: flex;
+    flex-direction: column;
+    height: 198px;
+    width: 280px;
+    border-radius: 15px;
+}
+
+.bigger_donation_image{
+    display: flex;
+    flex-direction: column;
+    height: 332px;
+    border-radius: 15px;
+    width: 280px;
+}
+
+@media (max-width: 980px) {
+    body{
+        padding: 0 1.1rem;
+        font: inherit;
+    }
+    .fixed-width{
+        max-width: 100%;
+    }
+    .donation-divider{
+        flex-direction: column;
+     }
+     .donation_images{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 12px;
+    }
+    .smaller_donation_image{
+        height: 220px;
+        width: 100%;
+        border-radius: 15px;
+    }
+    
+    .bigger_donation_image{
+        height: 360px;
+        border-radius: 15px;
+        width: 100%;
+    }
+     .donation-left > button{
+        align-self: center;
+        
+    }
+}
+
+
+@media (max-width: 768px) {
+   
+    .footer-navigations-bottom {
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .footer-navigations-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .footer-navigations-links-section {
+        align-items: center;
+    }
+
+    .gallery-socials {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        flex-direction: column;
+        margin-top: 1.5rem;
+    }
+
+    .gallery-heading > h2 {
+        font-size: 12px;
+    }
+
+    .gallery-heading > h3 {
+        font-size: 1.1rem;
+    }
+
+    .fixed-width {
+        width: 100%;
+    }
+
+    .donation_images {
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-heading > h2 {
+        font-size: 10px;
+        padding: 0.4rem;
+    }
+
+    .gallery-heading > h3 {
+        font-size: 1rem;
+    }
+
+    footer h3{
+        text-align: center;
+    }
+    .footer-navigations-bottom {
+        gap: 1rem;
+    }
+
+    .footer-navigations-links-section {
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 430px) {
+    .donation-right{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+    .donation_images{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 12px;
+    }
+.smaller_donation_image{
+    height: 220px;
+    width: 100%;
+    border-radius: 15px;
+    flex-direction:column;
+}
+
+.bigger_donation_image{
+    height: 360px;
+    border-radius: 15px;
+    width: 100%;
+}
 }
