@@ -12,4 +12,22 @@ document.querySelectorAll('.contentq .label').forEach(label => {
       }
     });
   });
-  
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const observerOptions = {
+      threshold: 0.15, // Trigger when 10% of the element is visible
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target); // Stop observing once it's visible
+        }
+      });
+    }, observerOptions);
+
+    // Target all elements with the 'observe' class
+    const elements = document.querySelectorAll('.observe');
+    elements.forEach(element => observer.observe(element));
+  });
