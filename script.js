@@ -1,3 +1,17 @@
+
+const toggleBtn = document.getElementById('toggleBtn');
+const mobileNav = document.getElementById('mobileNav');
+const toggleClose = document.getElementById('toggleClose');
+
+toggleBtn.addEventListener('click', () => {
+    mobileNav.style.left = '0';
+});
+
+toggleClose.addEventListener('click', () => {
+    mobileNav.style.left = '-100%';
+});
+
+
 document.querySelectorAll('.contentq .label').forEach(label => {
     label.addEventListener('click', () => {
       const contentq = label.parentElement;
@@ -31,3 +45,4 @@ document.querySelectorAll('.contentq .label').forEach(label => {
     const elements = document.querySelectorAll('.observe');
     elements.forEach(element => observer.observe(element));
   });
+

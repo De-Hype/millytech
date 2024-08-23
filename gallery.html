@@ -7,17 +7,54 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="header">
+    <div class="mobile-header">
+      <div class="main-mobile-header">
+        <div class="logo-footer-section">
+          <img src="./assets/logo.svg" alt="Logo" />
+          <h3>Milly-Tech Vision</h3>
+        </div>
+        <img
+          id="toggleBtn"
+          src="./assets/menu.svg"
+          alt="Menu"
+          class="menu-icon"
+        />
+      </div>
+    </div>
+
+    <nav id="mobileNav" class="mobile-nav">
+      <div class="nav-header">
+        <div class="logo-footer-section">
+          <img src="./assets/logo.svg" alt="Logo" />
+          <h3>Milly-Tech Vision</h3>
+        </div>
+        <img
+          id="toggleClose"
+          src="./assets/close.svg"
+          alt="Close"
+          class="close-icon"
+        />
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#footer">Contact</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="donation.html">Donate</a></li>
+      </ul>
+    </nav>
+    <header id="header" class="header">
       <div class="logo-footer-section">
         <img src="./assets/logo.svg" alt="" />
         <h3 class="">Milly-Tech Vision</h3>
       </div>
       <div class="center-navigations">
-        <a href="/">Home</a>
-        <a href="/">Features</a>
-        <a href="/">About Us</a>
+        <a href="index.html">Home</a>
+        <a href="#features">Features</a>
+        <a href="#about">About Us</a>
         <a href="gallery.html">Gallery</a>
-        <a href="/">Contact</a>
+        <a href="#footer">Contact</a>
       </div>
       <button id="get-started-btn" type="button">
         <a href="donation.html">Make a Donation</a>
@@ -54,12 +91,12 @@
                 </div>
                 <div class="donation_images">
                   <img
-                    src="./assets/donation_3.png"
+                    src="./assets/galleryImageOne.jpg"
                     class="smaller_donation_image"
                     alt=""
                   />
                   <img
-                    src="./assets/donation_4.png"
+                    src="./assets/galleryTwo.jpg"
                     class="bigger_donation_image"
                     alt=""
                   />
@@ -68,19 +105,19 @@
               <div class="donation-right fixed-width">
                 <div class="donation_images">
                   <img
-                    src="./assets/donation_1.png"
+                    src="./assets/galleryEight.jpg"
                     class="bigger_donation_image"
                     alt=""
                   />
                   <img
-                    src="./assets/donation_2.png"
+                    src="./assets/galleryFive.jpg"
                     class="smaller_donation_image"
                     alt=""
                   />
                 </div>
                 <div class="donation_images">
                   <img
-                    src="./assets/donation_3.png"
+                    src="./assets/gallerySix.jpg"
                     class="smaller_donation_image"
                     alt=""
                   />
@@ -96,24 +133,24 @@
               <div class="donation-right fixed-width">
                 <div class="donation_images">
                   <img
-                    src="./assets/donation_1.png"
+                    src="./assets/missionVisionImage.jpg"
                     class="bigger_donation_image"
                     alt=""
                   />
                   <img
-                    src="./assets/donation_2.png"
+                    src="./assets/1724324331528.jpg"
                     class="smaller_donation_image"
                     alt=""
                   />
                 </div>
                 <div class="donation_images">
                   <img
-                    src="./assets/donation_3.png"
+                    src="./assets/1723934493779.jpg"
                     class="smaller_donation_image"
                     alt=""
                   />
                   <img
-                    src="./assets/donation_4.png"
+                    src="./assets/galleryFour.jpg"
                     class="bigger_donation_image"
                     alt=""
                   />
@@ -122,12 +159,12 @@
               <div class="donation-right fixed-width">
                 <div class="donation_images">
                   <img
-                    src="./assets/donation_1.png"
+                    src="./assets/galleryThree.jpg"
                     class="bigger_donation_image"
                     alt=""
                   />
                   <img
-                    src="./assets/donation_2.png"
+                    src="./assets/galleryTen.jpg"
                     class="smaller_donation_image"
                     alt=""
                   />
@@ -139,7 +176,7 @@
                     alt=""
                   />
                   <img
-                    src="./assets/donation_4.png"
+                    src="./assets/galleryNine.jpg"
                     class="bigger_donation_image"
                     alt=""
                   />
@@ -150,7 +187,7 @@
         </section>
       </div>
     </main>
-    <div class="frequently-asked-questions ">
+    <div class="frequently-asked-questions observe">
       <div class="question-header">
         <h3>Frequently Asked Questions</h3>
         <div class="qheading">
@@ -161,21 +198,19 @@
         </div>
       </div>
       <div class="questions-section">
-        <div class="questions ">
+        <div class="questions observe">
           <div class="contentq">
             <div class="label">01. What is Milly-Tech Vision all about?</div>
             <div class="innercontent">
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Vitae ratione sint unde dolor eveniet saepe dolores obcaecati
-                laboriosam. Repellat quos a rerum reprehenderit dignissimos
-                magnam!
+                Our Mission is to empower girls, youths, and children through
+                tech education.
               </p>
             </div>
           </div>
         </div>
 
-        <div class="questions ">
+        <div class="questions observe">
           <div class="contentq">
             <div class="label">02. How experienced are your tutors?</div>
             <div class="innercontent">
@@ -189,53 +224,42 @@
           </div>
         </div>
 
-        <div class="questions ">
+        <div class="questions observe">
           <div class="contentq">
             <div class="label">03. What is your teaching method?</div>
             <div class="innercontent">
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Ipsam, eaque. Similique, asperiores autem est recusandae
-                reiciendis iure quasi tempore id labore? Et vel porro, natus
-                suscipit tempora voluptates neque error mollitia sint dolorum
-                illum odio pariatur amet! Sapiente, id corrupti labore
-                similique sunt ipsa et totam, fugit fuga, nesciunt eos?
+                At MillyTech, we provide a classroom for group learning and
+                also offer virtual classes.
               </p>
             </div>
           </div>
         </div>
 
-        <div class="questions ">
+        <div class="questions observe">
           <div class="contentq">
             <div class="label">04. How can I contact Milly-Tech Vision?</div>
             <div class="innercontent">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt,
-                quos accusamus, recusandae quas dolorum ea facere magnam
-                libero delectus numquam perferendis laborum, quibusdam est!
-                Minima ea beatae sequi quae reprehenderit! Eaque magni
-                necessitatibus ullam architecto voluptate maiores aut neque
-                assumenda, odio quod distinctio. Suscipit delectus est eum sit
-                ab quia.
+                How can I contact MillyTech?** You can reach us via email at
+                hello@milly-tech.vision, call us at +234 806 830 8405, or
+                visit us at Enen Afaha Street, Uyo, Akwa Ibom State.
               </p>
             </div>
           </div>
         </div>
 
-        <div class="questions ">
+        <div class="questions observe">
           <div class="contentq">
             <div class="label">
               05. Does Milly-Tech Vision truly offer free tech courses?
             </div>
             <div class="innercontent">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Consequuntur repudiandae quis culpa perferendis inventore at
-                dolor. Quibusdam quis nemo dolores earum nostrum sint
-                deserunt, ipsum omnis cum, sed ducimus, quia expedita
-                perferendis. Eum voluptatibus eaque maiores, dicta voluptatem
-                veniam, quia aperiam nihil et similique dolorum odio culpa
-                consectetur non ad.
+                Yes, Milly-Tech Vision genuinely offers free tech courses,
+                giving everyone the opportunity to gain valuable skills
+                without the financial burden. It's our way of empowering the
+                next generation of tech innovators.
               </p>
             </div>
           </div>
@@ -258,7 +282,7 @@
         </div>
       </div>
     </div>
-    <footer class="">
+    <footer id="footer" class="">
       <div class="footer-navigations">
         <div class="logo-footer-section">
           <img src="./assets/logo.svg" alt="" />
@@ -313,4 +337,5 @@
       </div>
     </footer>
   </body>
+  <script defer src="script.js"></script>
 </html>

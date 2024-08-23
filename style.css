@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 * {
   box-sizing: border-box;
@@ -6,13 +6,16 @@
   padding: 0;
   font-family: "Inter", sans-serif;
 }
+#mission-vision-heading {
+  font-size: 16px;
+}
 
 .my-heading {
   font-size: 1.34rem;
   text-align: center;
   color: #141c24;
 }
-.logo-footer-section{
+.logo-footer-section {
   display: flex;
   align-items: center;
   gap: 1.2rem;
@@ -24,7 +27,7 @@
   text-align: center;
   color: #344051;
 }
-.background-text{
+.background-text {
   background-color: #f0f6ff;
   color: #0052cc;
   padding: 0.5rem 0.5rem;
@@ -169,10 +172,9 @@ body {
   justify-content: center;
   margin: 2.5rem 0;
 }
-.copyright p{
+.copyright p {
   text-align: center;
 }
-
 
 /* Donation */
 .fixed-width {
@@ -190,7 +192,7 @@ body {
   flex: 1;
   justify-content: space-between;
 }
-#change-size{
+#change-size {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -272,20 +274,47 @@ body {
 .question-header,
 .more-questions,
 .programme {
-  
   text-align: center;
   justify-content: space-between;
   margin: auto;
   padding: 10px;
 }
-.more-questions-banner{
+.more-questions-banner {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+.mission-vision {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.mision-image-section {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+.mision-image-section > #first_image {
+  width: 150px;
+  max-width: 180px;
+  max-height: 250px;
+  height: 230px;
+  border-radius: 10px;
+}
+.mision-image-section > #second-Image {
+  max-height: 425px;
+  border-radius: 10px;
+  max-width: 294px;
+}
 
-
-
+.main-mobile-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main-mobile-header > img {
+  cursor: pointer;
+}
 
 .more-questions {
   border: 1rem;
@@ -294,18 +323,18 @@ body {
   /* height: 100px; */
   font-size: small;
   max-width: 450px;
-  
+
   text-align: center;
   /* justify-content: space-between; */
   margin-top: 2rem;
   margin-bottom: 2rem;
   padding: 2rem 0.5rem;
 }
-.more-questions .contain{
+.more-questions .contain {
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: .8rem;
+  gap: 0.8rem;
 }
 .contact {
   background-color: blue;
@@ -323,8 +352,24 @@ body {
   margin: 0;
   padding: 0;
 }
+.mobile-header {
+  display: none;
+}
+.small-spaces {
+  padding: 0.9rem 0;
+}
+.small-spaces h3 {
+  padding: 0.6rem 0;
+}
 
 @media (max-width: 980px) {
+  #header {
+    display: none;
+    background-color: red;
+  }
+  .mobile-header {
+    display: block;
+  }
   body {
     padding: 0 1.1rem;
     font: inherit;
@@ -332,25 +377,39 @@ body {
   .fixed-width {
     max-width: 100%;
   }
-  .hero{
+  .hero {
     flex-direction: column;
     gap: 1.2rem;
-    
   }
-  .hero_text_section{
+  .hero_text_section {
     align-items: center;
   }
-  .hero_text_section > h3{
+  .hero_text_section > h3 {
     text-align: center;
   }
-  .hero_text_section > p{
+  .hero_text_section > p {
     text-align: center;
   }
-  .rating{
+  .rating {
     align-items: center;
   }
   .donation-divider {
     flex-direction: column;
+  }
+  .mission-vision {
+    flex-direction: column;
+  }
+  .mision-image-section {
+    flex-direction: column;
+    width: 100%;
+  }
+  .mision-image-section > #first_image {
+    width: 100%;
+    max-width: 100%;
+  }
+  .mision-image-section > #second-Image {
+    width: 100%;
+    max-width: 100%;
   }
   .donation_images {
     display: flex;
@@ -367,11 +426,11 @@ body {
     align-items: center;
     justify-content: center;
   }
-  .footer-navigations-links-section > h3{
+  .footer-navigations-links-section > h3 {
     align-self: center;
   }
   .footer-navigations-links-section > a {
-   align-self: center;
+    align-self: center;
   }
   .features {
     flex-direction: column;
@@ -394,14 +453,14 @@ body {
     align-self: center;
   }
 }
-.main-gallery{
+.main-gallery {
   display: flex;
   width: 100%;
   gap: 1.2rem;
   margin-top: 1.2rem;
   margin-bottom: 3rem;
 }
-.main-gallery .top{
+.main-gallery .top {
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
@@ -413,15 +472,13 @@ body {
     text-align: center;
   }
 
-.main-gallery{
-  flex-direction: column;
-}
-
+  .main-gallery {
+    flex-direction: column;
+  }
 
   .my-heading {
-      color: #141c24;
-      font-size: 1.4rem;
-    
+    color: #141c24;
+    font-size: 1.4rem;
   }
   .buttons {
     flex-direction: column;
@@ -439,8 +496,6 @@ body {
     align-items: center;
     gap: 1.5rem;
   }
-
-  
 
   .gallery-socials {
     flex-direction: column;
@@ -489,6 +544,15 @@ body {
   .footer-navigations-links-section {
     align-items: flex-start;
   }
+  .logo-footer-section {
+    gap: 0.9rem;
+  }
+  .logo-footer-section img {
+    height: 50px;
+  }
+  .logo-footer-section h3 {
+    font-size: 15px;
+  }
 }
 
 @media (max-width: 430px) {
@@ -516,17 +580,17 @@ body {
     width: 100%;
   }
 }
-.main-gallery .top{
+.main-gallery .top {
   flex-direction: column;
 }
 
-.our-programe-headings{
+.our-programe-headings {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-#watch-play{
+#watch-play {
   display: flex;
   align-items: center;
   padding: 10px 20px;
@@ -539,7 +603,6 @@ body {
   width: 100%;
   max-width: 800px;
 } */
-
 
 .questions {
   width: 100%;
@@ -599,7 +662,7 @@ body {
   top: 1.3rem;
   right: 10px;
   text-align: center;
-  
+
   font-size: 0.8rem;
   border-radius: 100px;
   width: 15px;
@@ -610,7 +673,6 @@ body {
   height: auto;
   padding: 10px;
 }
-
 
 .observe {
   opacity: 0;
@@ -623,35 +685,35 @@ body {
   transform: translateY(0);
 }
 
-.question-header{
+.question-header {
   max-width: 550px;
   padding: 1.2rem 0;
 }
-.frequently-asked-questions{
+.frequently-asked-questions {
   padding: 2rem 0;
 }
 
-.header{
+.header {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.center-navigations{
+.center-navigations {
   display: flex;
   align-items: center;
   gap: 1.2rem;
 }
-.center-navigations a{
+.center-navigations a {
   text-decoration: none;
   color: #141c24;
 }
-.center-navigations a:hover{
+.center-navigations a:hover {
   color: #83aff0;
 }
-.center-navigations a:active{
+.center-navigations a:active {
   color: #1a75ff;
 }
-header  > button{
+header > button {
   background: #1a75ff;
   padding: 10px 20px;
   border-radius: 8px;
@@ -663,42 +725,90 @@ header > button > a {
   text-decoration: none;
   color: #fff;
 }
-.hero{
+.hero {
   display: flex;
   align-items: center;
 }
-.hero_text_section{
+.hero_text_section {
   max-width: 592px;
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
 }
-.hero_text_section > h3{
+.hero_text_section > h3 {
   font-size: 48px;
-  color: #141C24;
+  color: #141c24;
 }
-.hero_text_section > p{
+.hero_text_section > p {
   color: #344051;
 }
-.rating{
+.rating {
   display: flex;
   flex-direction: column;
   gap: 1.03rem;
 }
-.rating > p{
+.rating > p {
   font-size: 15px;
   color: #344051;
 }
-.rating > .stars{
+.rating > .stars {
   display: flex;
   align-items: center;
-  gap: .9rem;
+  gap: 0.9rem;
 }
-.heroImage{
+.heroImage {
   max-height: 720px;
   max-width: 100%;
 }
-.heroImage > img{
+.heroImage > img {
   height: 100%;
   width: 100%;
+}
+
+
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  color: white;
+  transition: left 0.3s ease-in-out;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.close-icon {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.mobile-nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.mobile-nav ul li {
+  padding: 15px 0;
+}
+
+.mobile-nav ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+.mobile-nav ul li a:hover {
+  background-color: #575757;
+  padding-left: 10px;
+  transition: padding-left 0.3s ease;
 }
