@@ -1,8 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Inter", sans-serif;
 }
 
 .my-heading {
@@ -291,7 +293,7 @@ body {
   background-color: #c0d6f8;
   /* height: 100px; */
   font-size: small;
-  /* width: 350px; */
+  max-width: 450px;
   
   text-align: center;
   /* justify-content: space-between; */
@@ -303,6 +305,7 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
+  gap: .8rem;
 }
 .contact {
   background-color: blue;
@@ -328,6 +331,20 @@ body {
   }
   .fixed-width {
     max-width: 100%;
+  }
+  .hero{
+    flex-direction: column;
+    gap: 1.2rem;
+    
+  }
+  .hero_text_section{
+    align-items: center;
+  }
+  .hero_text_section > h3{
+    text-align: center;
+  }
+  .hero_text_section > p{
+    text-align: center;
   }
   .donation-divider {
     flex-direction: column;
@@ -582,4 +599,84 @@ body {
 .observe.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+.question-header{
+  max-width: 550px;
+  padding: 1.2rem 0;
+}
+.frequently-asked-questions{
+  padding: 2rem 0;
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.center-navigations{
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+.center-navigations a{
+  text-decoration: none;
+  color: #141c24;
+}
+.center-navigations a:hover{
+  color: #83aff0;
+}
+.center-navigations a:active{
+  color: #1a75ff;
+}
+header  > button{
+  background: #1a75ff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+}
+header > button > a {
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+}
+.hero{
+  display: flex;
+  align-items: center;
+}
+.hero_text_section{
+  max-width: 592px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.hero_text_section > h3{
+  font-size: 48px;
+  color: #141C24;
+}
+.hero_text_section > p{
+  color: #344051;
+}
+.rating{
+  display: flex;
+  flex-direction: column;
+  gap: 1.03rem;
+}
+.rating > p{
+  font-size: 15px;
+  color: #344051;
+}
+.rating > .stars{
+  display: flex;
+  align-items: center;
+  gap: .9rem;
+}
+.heroImage{
+  max-height: 720px;
+  max-width: 100%;
+}
+.heroImage > img{
+  height: 100%;
+  width: 100%;
 }
